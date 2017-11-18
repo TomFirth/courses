@@ -20,6 +20,7 @@ y.moo = 3;
 foo(a, b);
 console.log("a = " + a + "; b = " + JSON.stringify(b));
 ```
+[Answer](#q1)
 
 ## Question 2:
 #### What will the below code print out?
@@ -28,6 +29,7 @@ var asimsVar = 3
 asimVar = 1
 console.log(asimVar)
 ```
+[Answer](#q2)
 
 ## Question 3:
 #### What will the below code print out?
@@ -38,6 +40,7 @@ var asimsVar = 3;
 asimVar = 1;
 console.log(asimVar);
 ```
+[Answer](#q3)
 
 ## Question 4:
 #### What will the below code print out?
@@ -48,12 +51,14 @@ if (undefined == null) {
   console.log("Zoo")
 }
 ```
+[Answer](#q4)
 
 ## Question 5:
 #### What will the below code print out?
 ```
 console.log(typeof(null))
 ```
+[Answer](#q5)
 
 ## Question 6:
 #### What will the below code print out?
@@ -64,18 +69,21 @@ if (undefined === null) {
   console.log("Zoo")
 }
 ```
+[Answer](#q6)
 
 ## Question 7:
 #### What will the below code print out?
 ```
 console.log(NaN == "1")
 ```
+[Answer](#q7)
 
 ## Question 8
 #### What happens when you execute the code below
 ```
 a = 1
 ```
+[Answer](#q8)
 
 ## Question 9:
 #### What will the below code print out?
@@ -87,6 +95,7 @@ var code = "var name = 'asim';"
 eval(code)
 console.log(name)
 ```
+[Answer](#q9)
 
 ## Question 10:
 #### What will this code print?
@@ -96,6 +105,7 @@ console.log(name)
 })()
 console.log("a defined? " + (typeof a !== 'undefined'))
 ```
+[Answer](#q10)
 
 ## Question 11:
 #### What will this code print?
@@ -105,6 +115,7 @@ var moo = function() {
   console.log("loo")
 }
 ```
+[Answer](#q11)
 
 ## Question 12:
 #### Consider the following code snippet:
@@ -119,6 +130,7 @@ for (var i = 0; i < 5; i++) {
 }
 ```
 #### What gets logged to the console when the user clicks on “Button 4”?
+[Answer](#q12)
 
 ## Question 13:
 #### What will the following code output to the console?
@@ -127,6 +139,7 @@ console.log((function f(n){
   return ((n > 1) ? n * f(n-1) : n)
 })(4))
 ```
+[Answer](#q13)
 
 ## Question 14:
 #### Consider the code snippet below. What will the console output be?
@@ -137,6 +150,7 @@ console.log((function f(n){
   })(2)
 })(1)
 ```
+[Answer](#q14)
 
 ## Question 15:
 #### Consider the code snippet below. What will the console output?
@@ -150,6 +164,7 @@ function moo() {
 }
 loo()
 ```
+[Answer](#q15)
 
 ## Question 16:
 #### What will be the output of first console.log in the code below?
@@ -159,14 +174,16 @@ var salary = "1000$"
   console.log("Original salary was " + salary)
   var salary = "5000$"
   console.log("My New Salary " + salary)
-})();
+})()
 ```
+[Answer](#q16)
 
 ## Question 17:
 #### What does the below code print out?
 ```
 console.log(this)
 ```
+[Answer](#q17)
 
 ## Question 18:
 #### What does the below code print out?
@@ -177,6 +194,7 @@ console.log(this)
   console.log(this);
 })();
 ```
+[Answer](#q18)
 
 ## Question 19:
 #### What does the below code print out?
@@ -191,6 +209,7 @@ var animal = {
 };
 animal.which();
 ```
+[Answer](#q19)
 
 ## Question 20:
 #### What does the below code print out?
@@ -206,6 +225,7 @@ var animal = {
 var animalFunc = animal.which;
 animalFunc();
 ```
+[Answer](#q20)
 
 ## Question 21:
 #### What does the below code print out?
@@ -217,6 +237,7 @@ function sayHello(last_name) {
 }
 sayHello("Hussain");
 ```
+[Answer](#q21)
 
 ## Question 22:
 #### What does the below code print out?
@@ -228,6 +249,7 @@ function sayHello(last_name) {
 }
 sayHello.call("Asim", "Hussain");
 ```
+[Answer](#q22)
 
 ## Question 23:
 #### What does the below code print out?
@@ -239,6 +261,7 @@ function sayHello(last_name) {
 }
 sayHello.apply("Asim", ["Hussain"]);
 ```
+[Answer](#q23)
 
 ## Question 24:
 #### What does the below code print out?
@@ -250,6 +273,7 @@ function sayHello(last_name) {
 }.bind("Asim");
 sayHello("Hussain");
 ```
+[Answer](#q24)
 
 ## Question 25:
 #### What does the below code print out?
@@ -261,6 +285,7 @@ var sayHello = function(last_name) {
 }.bind("Asim");
 sayHello("Hussain");
 ```
+[Answer](#q25)
 
 ## Question 26:
 #### What does the below code print out?
@@ -271,6 +296,7 @@ var device = {
 var product = Object.create(device)
 console.log(product.kind)
 ```
+[Answer](#q26)
 
 ## Question 27:
 #### How would you create an instance of this pseudo-class using the constructor pattern?
@@ -283,6 +309,7 @@ var product = new Device("music player")
 var product = Device("music player")
 var product = Device.call("music player")
 ```
+[Answer](#q27)
 
 ## Question 28:
 #### What would the below code print out?
@@ -297,6 +324,7 @@ function Device(kind) {
 var product = new Device("music player")
 product.printKind()
 ```
+[Answer](#q28)
 
 ## Question 29:
 #### What would the below code print out?
@@ -312,6 +340,7 @@ var product = new Device("music player")
 product.kind = "radio"
 product.printKind()
 ```
+[Answer](#q29)
 
 ## Question 30:
 #### What would the below code print out?
@@ -327,6 +356,7 @@ Device.prototype.printKind = function () {
 var product = new Device("music player")
 product.printKind()
 ```
+[Answer](#q30)
 
 ## Question 31:
 #### We want AppleProduct to inherit from Device. Whats the best method of setting the kind property?
@@ -357,6 +387,7 @@ function AppleProduct(name, kind) {
   Device(kind)
 }
 ```
+[Answer](#q31)
 
 ## Question 32:
 #### We want AppleProduct to inherit from Device. How do we make available to AppleProduct the functions created for Device?
@@ -381,6 +412,7 @@ AppleProduct.prototype.__proto__ = Device.prototype;
 // C
 Nothing, the functions are already available!
 ```
+[Answer](#q32)
 
 ## Question 33:
 #### What does the below code print out?
@@ -396,25 +428,32 @@ var AppleProduct = Object.create(Device, {
 var purchase = Object.create(AppleProduct)
 console.log(purchase.name)
 ```
+[Answer](#q33)
 
 ## Question 34:
 #### What does CORS stand for?
+[Answer](#q34)
 
 ## Question 35:
 #### What header is always sent by the browser on a CORS request?
+[Answer](#q35)
 
 ## Question 36:
 #### What header needs the be present on a CORS response to a GET request for the browser to allow a request to pass through?
+[Answer](#q36)
 
 ## Question 37:
 #### If we were making a POST CORS request, what HTTP request does the browser send first?
+[Answer](#q37)
 
 ## Question 38:
 #### When we make a POST CORS request, the response to the pre-flight request needs to contain a header with a specific value.
 #### Which of the below options would be an acceptable response for the browser to allow the POST request?
+[Answer](#q38)
 
 ## Question 39:
 #### Does event capturing happen first or is it event bubbling?
+[Answer](#q39)
 
 ## Question 40:
 #### Does this code add an event listener to the event capturing phase or the bubbling phase?
@@ -426,6 +465,7 @@ console.log(purchase.name)
   }, true)
 })()
 ```
+[Answer](#q40)
 
 ## Question 41:
 #### Does the below code add an event listener on the event capturing phase or the event bubbling phase?
@@ -437,12 +477,19 @@ console.log(purchase.name)
   })
 })()
 ```
+[Answer](#q41)
 
 ## Question 42:
 #### Calling the prevent default function in an event listener stops the next event listener from being called?
+[Answer](#q42)
 
 ## Question 43:
 #### If we clicked a checkbox, calling preventDefault() from one of the event listeners would stop the checkbox from having the tick applied to it.
+[Answer](#q43)
+
+## Question 44:
+#### 
+[Answer](#q44)
 
 ## Answers
 #### Q1:
@@ -608,40 +655,40 @@ We use the Object.create function.
 
 The second param to the Object.create function is an object literal that described the properties we want to create on the object. So the value should be something like {name: {value: 'iPod'}} and not {name: 'iPod'}.
 
-#### Q35:
+#### Q34:
 `Cross Origin Resource Sharing`
 
-#### Q36:
+#### Q35:
 `Origin`
 
-#### Q37:
+#### Q36:
 `Acess-Control-Allow-Origin`
 
 If this header isn't present it won't allow the request to reach your code.
 
-#### Q38:
+#### Q37:
 `OPTIONS`
 
 The browser sends what's called a "pre-flight" options request first to check to see if it can send a POST request later on.
 
-#### Q39:
+#### Q38:
 `Access-Control-Request-Method: POST, PUT, GET, DELETE`
 
 It's this header and the value can contain a comma separated list of HTTP VERBS which the server will accept.
 
-#### Q40:
+#### Q39:
 `Event capturing happens first`
 
 #### Q40:
 `Event capturing phase`
 
-#### Q40:
+#### Q41:
 `Event bubbling phase`
 
-#### Q40:
+#### Q42:
 `False`
 
-#### Q40:
+#### Q43:
 `True`
 
 Prevent default stops the default action of an element, but doesn't stop the event from propagating.
