@@ -33,6 +33,7 @@ const render = () => {
     <div>
       <h1>{app.title}</h1>
       {(app.subTitle && <p>{app.subTitle}</p>)}
+      {console.error('++', app.options)}
       <button disabled={app.options.length === 0} onClick={onMakeDecision}>What should I do?</button>
       <p>{app.options.length > 0 ? 'Here are your options' : 'No options'}</p>
       {(app.options.length > 0 &&

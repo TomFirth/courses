@@ -16,14 +16,18 @@ class AddOption extends PureComponent {
     this.setState(() => {
       return { error }
     })
+
+    if (!error) {
+      e.target.elements.option.value = ''
+    }
   }
   render () {
     return (
       <React.Fragment>
-        {this.state.error && <p>{this.state.error}</p>}
-        <form onSubmit={this.handleAddOption}>
-          <input type='text' name='option' />
-          <button>Add Option</button>
+        {this.state.error && <p className='add-option-error'>{this.state.error}</p>}
+        <form className='add-option' onSubmit={this.handleAddOption}>
+          <input className='add-option__input ' type='text' name='option' />
+          <button className='button'>{this.props.messages.addOption}</button>
         </form>
       </React.Fragment>
     )

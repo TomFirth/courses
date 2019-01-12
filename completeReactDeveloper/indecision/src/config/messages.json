@@ -1,0 +1,13 @@
+{
+  "addOption": "Add option",
+  "modalClose": "Okay",
+  "modalMessage": "I think you should..",
+  "noOptions": "There are no options",
+  "optionsListTitle": "Your options",
+  "question": "What should I do?",
+  "removeOne": "Remove",
+  "removeOptions": "Clear all",
+  "selectedOption": "Do this thing",
+  "subTitle": "Let me decide for you",
+  "title": "Indecision"
+}

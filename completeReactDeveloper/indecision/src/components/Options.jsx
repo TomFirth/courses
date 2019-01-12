@@ -3,19 +3,47 @@ import { Option } from '../components'
 
 class Options extends PureComponent {
   render () {
+    const hasOptions = this.props.options.length > 0
     return (
-      <div>
-        {(this.props.options.length > 0 &&
-          <div>
-            <button onClick={this.props.handleDeleteOptions}>Remove All Options</button>
-            <ol>
-              {this.props.options.map(option => {
-                return <Option key={option} option={option} />
+      <React.Fragment>
+        <div className='widget-header'>
+          <h3 className='widget-header__title'>
+            {hasOptions ? (
+              <React.Fragment>{this.props.messages.optionsListTitle}</React.Fragment>
+            ) : (
+              <React.Fragment>
+                {this.props.messages.noOptions}
+              </React.Fragment>
+            )}
+          </h3>
+          {hasOptions &&
+            <button
+              className='button button--link'
+              onClick={this.props.handleDeleteOptions}>
+              {this.props.messages.removeOptions}
+            </button>
+          }
+        </div>
+        <div className='widget__message'>
+          {hasOptions ? (
+            <React.Fragment>
+              {this.props.options.map((option, index) => {
+                return <Option
+                  count={index + 1}
+                  handleDeleteOption={this.props.handleDeleteOption}
+                  key={option}
+                  messages={this.props.messages}
+                  option={option}
+                />
               })}
-            </ol>
-          </div>
-        )}
-      </div>
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              {this.props.options.length === 0 && <p>Please add an option to get started</p>}
+            </React.Fragment>
+          )}
+        </div>
+      </React.Fragment>
     )
   }
 }

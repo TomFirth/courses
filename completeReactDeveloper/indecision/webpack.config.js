@@ -1,20 +1,15 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const paths = {
-  PUB: path.resolve(__dirname, 'public'),
-  SRC: path.resolve(__dirname, 'src')
-}
-
 module.exports = {
-  entry: path.join(paths.SRC, 'app.js'),
+  entry: path.join(__dirname, '/src/app.js'),
   output: {
-    path: paths.PUB,
+    path: path.join(__dirname, 'public'),
     filename: 'app.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(paths.SRC, 'index.html')
+      template: path.join(__dirname, '/src/index.html')
     })
   ],
   mode: 'development',
@@ -23,9 +18,13 @@ module.exports = {
       test: [/\.js$/, /\.jsx$/],
       exclude: /node_modules/,
       use: [ 'babel-loader' ]
-    }]
-  },
+    }, {
+      test: [/\.css$/, /\.scss$/],
+      use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+    }
+    ] },
   resolve: {
-    extensions: ['.js', '.jsx']
-  }
+    extensions: ['.js', '.jsx', '.json']
+  },
+  devtool: 'cheap-module-eval-source-map'
 }
