@@ -13,4 +13,4 @@ Udemy course with Anthony Alicea [completed](https://github.com/TomFirth/courses
 Udemy course with Andrew Mead [inProgress](https://github.com/TomFirth/courses/tree/master/completeReactDeveloper)
 
 ### React Training
-webpack and react 101 training from Holiday Extras [inProgress](https://github.com/TomFirth/courses/tree/master/react-training)
+webpack and react 101 training from Holiday Extras [inComplete](https://github.com/TomFirth/courses/tree/master/react-training)

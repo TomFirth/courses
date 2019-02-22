@@ -1,4 +1,4 @@
-# Advanced Javasvript with Asim Hussain
+# Advanced Javascript with Asim Hussain
 The course is presented as a number of interview questions.
 Below are the questions and then answers, asked by Asim throughout the course, to test progress.
 
